@@ -46,15 +46,21 @@ function render(variables = {}) {
           }">
             <li><a href="${
               variables.twitter
+                ? "https://twitter.com/" + variables.twitter
+                : "#"
             }"><i class="fab fa-twitter"></i></a></li>
             <li><a href="${
-              variables.github
+              variables.github ? "https://github.com/" + variables.github : "#"
             }"><i class="fab fa-github"></i></a></li>
             <li><a href="${
               variables.linkedin
+                ? "https://linkedin.com/in/" + variables.linkedin
+                : "#"
             }"><i class="fab fa-linkedin"></i></a></li>
             <li><a href="${
               variables.instagram
+                ? "https://instagram.com/" + variables.instagram
+                : "#"
             }"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
